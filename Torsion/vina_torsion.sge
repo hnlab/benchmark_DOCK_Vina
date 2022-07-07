@@ -1,0 +1,14 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -cwd
+#$ -q honda
+#$ -pe honda 1
+#$ -o sge-logs
+#$ -e sge-errs
+#$ -j y
+#$ -r y
+
+echo `date`
+echo `hostname`
+bash qsub_vina.sh
+echo `date`

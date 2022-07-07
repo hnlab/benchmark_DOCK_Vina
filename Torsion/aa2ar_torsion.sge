@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -cwd
+#$ -q honda
+#$ -o sge-logs
+#$ -e sge-errs
+#$ -j y
+#$ -r y
+
+bash 0-uinq_vina_mol.sh

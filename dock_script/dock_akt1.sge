@@ -1,0 +1,13 @@
+#!/bin/csh
+#$ -S /bin/csh
+#$ -cwd
+#$ -q honda
+#$ -o sge-logs
+#$ -e sge-errs
+#$ -j y
+#$ -r y
+##$ -t 1-1
+
+echo `date`
+echo `hostname`
+/home/soft/ucsfdock/DOCK-3.7b-bela30c/docking/DOCK/src/x86_64/dock64 INDOCK
